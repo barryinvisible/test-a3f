@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-<link href="main.css?f8586a950cdc620f7092" rel="stylesheet"></head>
+<link href="main.css?782bc4e9f99baec6eb6b" rel="stylesheet"></head>
 
 <body>
     <div class="popup mfp-hide" id="popup-form">
@@ -19,27 +19,31 @@
                     <input class="w-full outline-none" type="text" name="user_phone" placeholder="Ваш телефон">
                 </div>
             </div>
-            <button class="bg-blue-500 primary-btn bg-blue-700 uppercase text-white text-normal font-thin py-5 px-12 cursor-pointer">
+            <button class="bg-blue-500 callback text-normal">
                 Заказать звонок
         </button>
         </div>
     </div>
     <header class="container flex justify-between">
         <div class="flex">
-            <div class="logo flex items-center px-2">
-                <img class="w-full h-auto" src='images/9080f11b860a1d2b0fc671ee8e1024e0.png' />
-            </div>
-            <div class="logo flex items-center px-2">
-                <img class="w-full h-auto" src='images/0a1b687c9b533b5cf65eeb5d24606589.png' />
-            </div>
+            <a href="">
+                <div class="logo flex items-center px-2">
+                    <img class="w-full h-auto" src='images/4f44725fdc33ea6a97a900482af7c343.png' />
+                </div>
+            </a>
+            <a href="">
+                <div class="logo flex items-center px-2">
+                    <img class="w-full h-auto" src='images/0a1b687c9b533b5cf65eeb5d24606589.png' />
+                </div>
+            </a>
             <div class="logo-text font-sm pl-4 leading-normal hidden sm:block px-2">
                 Официальный дилер <span class="font-bold">Suzuki</span> в Санкт-Петербурге
             </div>
         </div>
         <div class="hidden justify-end items-center md:flex">
             <div class="flex flex-col text-right leading-none">
-                <a href="tel:+7 812 210-94-05" class="uppercase font-bold text-2xl">+7 812 210-94-05</a>
-                <a href="#popup-form" class="popup-form text-base font-light text-blue-500">Заказать звонок</a>
+                <a href="tel:+7 812 210-94-05" class="hover:text-blue-500 whitespace-no-wrap uppercase font-bold text-2xl">+7 812 210-94-05</a>
+                <a href="#popup-form" class="hover:text-black popup-form text-base font-light text-blue-500">Заказать звонок</a>
             </div>
         </div>
         <div class="flex justify-end items-center md:hidden">
@@ -48,13 +52,36 @@
             </div>
         </div>
     </header>
-    <section class="primary-bg w-full">
-        <div class="pt-24 container flex flex-col">
-            <div class="primary-text font-normal uppercase text-4xl text-white">Новая Suzuki SX4</div>
-            <div class="text-6xl font-normal text-white pb-8">от 1 099 000 ₽</div>
-            <a href="#" class="primary-btn bg-blue-700 uppercase text-white text-normal font-thin py-5 px-12">Узнать подробнее</a>
+    <section class="main-slider">
+        <div class="slicker">
+            <div class="slide slide--1">
+                <div class="slide-content container flex flex-col">
+                    <div class="primary-text">Новая Suzuki SX4</div>
+                    <div class="text-4xl sm:text-6xl font-normal text-white pb-8">от 1 099 000 ₽</div>
+                    <a href="#" class="primary-btn primary-btn__header text-normal">Узнать подробнее</a>
+                </div>
+            </div>
+            <div class="slide slide--2">
+                <div class="slide-content container flex flex-col">
+                    <div class="primary-text">Новая Suzuki SX4 v.2</div>
+                    <div class="text-4xl sm:text-6xl font-normal text-white pb-8">от 1 699 000 ₽</div>
+                    <a href="#" class="primary-btn primary-btn__header text-normal">Узнать подробнее</a>
+                </div>
+            </div>
+            <div class="slide slide--3">
+                <div class="slide-content container flex flex-col">
+                    <div class="primary-text">Новая Suzuki SX4 v.3</div>
+                    <div class="text-4xl sm:text-6xl font-normal text-white pb-8">от 1 999 000 ₽</div>
+                    <a href="#" class="primary-btn primary-btn__header text-normal">Узнать подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="dots-nav" class="flex">
+            </div>
         </div>
     </section>
+    <!--  -->
     <section class="w-full bg-gray-200">
         <div class="container">
             <div class="flex flex-wrap w-full py-4" id="tabs">
@@ -91,21 +118,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -115,21 +142,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -139,21 +166,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -163,21 +190,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -187,21 +214,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -211,21 +238,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -235,21 +262,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -259,21 +286,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -283,21 +310,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -307,21 +334,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -331,21 +358,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -355,21 +382,21 @@
                     <img class="w-full h-auto" src='images/88b27ad7e48865fe1d674086debe94ee.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
         </div>
         <div class="py-16 flex flex-wrap w-full tabContent">
@@ -381,21 +408,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -405,21 +432,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -429,21 +456,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -453,21 +480,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -477,21 +504,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -501,21 +528,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -525,21 +552,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -549,21 +576,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -573,21 +600,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -597,21 +624,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -621,21 +648,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col px-3 py-6">
                 <div class="text-xl text-center">
@@ -645,21 +672,21 @@
                     <img class="w-full h-auto" src='images/059e1cfb949fbf8c160b952095aea73e.png' />
                 </div>
                 <div class="flex justify-between flex-wrap text-gray-700">
-                    <div class="w-full flex justify-between">
-                        <div class="">Модификация</div>
-                        <div class="">1.6 л. 5АКПП</div>
+                    <div class="model-block">
+                        <div class="model-character">Модификация</div>
+                        <div class="model-value">1.6 л. 5АКПП</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Привод</div>
-                        <div class="">Передний</div>
+                    <div class="model-block" ">
+                        <div class="model-character ">Привод</div>
+                        <div class="model-value ">Передний</div>
                     </div>
-                    <div class="w-full flex justify-between">
-                        <div class="">Старая цена</div>
-                        <div class="">1 315 990 ₽</div>
+                    <div class="model-block "">
+                        <div class="model-character">Старая цена</div>
+                        <div class="model-value">1 315 990 ₽</div>
                     </div>
                 </div>
-                <a href="#" class="text-normal font-normal border border-blue-700 text-center text-blue-700 py-3 my-2">Подробнее об автомобиле</a>
-                <a href="#" class="text-normal font-bold bg-blue-700 text-center text-white py-3">Купить за 1 115 990 ₽</a>
+                <a href="#" class="model-info primary-btn text-normal">Подробнее об автомобиле</a>
+                <a href="#" class="model-cost primary-btn text-normal">Купить за 1 115 990 ₽</a>
             </div>
         </div>
     </section>
@@ -672,69 +699,69 @@
     </section>
     <section class="w-full bg-blue-700">
         <div class="container w-full flex flex-wrap justify-between">
-            <div class="w-full sm:w-1/3 px-2 py-4">
-                <div class="gift-shadow cursor-pointer bg-white -mt-24">
+            <div class="w-full sm:w-1/3 px-3 py-4">
+                <div class="gift-shadow -mt-24">
                     <div class="mx-5 pt-5 mb-0">
-                        <img class="w-full h-auto" src='images/3a69043bf360eb0d3a6942db0a85bd61.png' />
+                        <img class="w-full h-auto" src='images/3f2b034694b4aacc6b5c89435ccaa60d.png' />
                     </div>
-                    <div class="gift-text text-center uppercase font-bold text-2xl pb-4 pt-4 px-4">
+                    <div class="gift-text">
                         Антикоррозийное покрытие
                     </div>
                 </div>
             </div>
-            <div class="w-full sm:w-1/3 px-2 py-4">
-                <div class="gift-shadow cursor-pointer bg-white sm:-mt-24">
+            <div class="w-full sm:w-1/3 px-3 py-4">
+                <div class="gift-shadow sm:-mt-24">
                     <div class="mx-5 pt-5 mb-0">
-                        <img class="w-full h-auto" src='images/77776fae1a86dbac5044d6209634401d.png' />
+                        <img class="w-full h-auto" src='images/fd7f44fb7257161eb45bc2873ad4b18d.png' />
                     </div>
-                    <div class="gift-text text-center uppercase font-bold text-2xl pb-4 pt-4 px-4">
+                    <div class="gift-text">
                         Защитная сетка радиатора
                     </div>
                 </div>
             </div>
-            <div class="w-full sm:w-1/3 px-2 py-4">
-                <div class="gift-shadow cursor-pointer bg-white sm:-mt-24">
+            <div class="w-full sm:w-1/3 px-3 py-4">
+                <div class="gift-shadow sm:-mt-24">
                     <div class="mx-5 pt-5 mb-0">
                         <img class="w-full h-auto" src='images/fb6da9e3ecf6f40e3d63ebfa91d8e35f.png' />
                     </div>
-                    <div class="gift-text text-center uppercase font-bold text-2xl pb-4 pt-4 px-4">
+                    <div class="gift-text">
                         Антишум колёсных арок
                     </div>
                 </div>
             </div>
             <!-- f -->
             <div class="w-full sm:w-1/3 px-8 py-2 sm:py-24">
-                <div class="cursor-pointer bg-transparent flex flex-col justify-center items-center text-center">
-                    <div class="gift-icon m-8">
-                        <img class="w-full h-auto" src='images/ba7f6e3ab2d8391c808ec7e422f8b756.png' />
+                <div class="cake">
+                    <div class="cake-icon">
+                        <img class="w-full h-auto" src='images/a450317f2bcde2590ee5da53dc8f75da.svg' />
                     </div>
-                    <h1 class="text-2xl text-white font-bold pb-4">Трейд-ин</h1>
-                    <div class="text-xl text-white font-thin pb-4">Скидка до 180 000 ₽ на Vitara и до 240 000 ₽ на SX4</div>
+                    <h1 class="cake-title">Трейд-ин</h1>
+                    <div class="cake-article">Скидка до 180 000 ₽ на Vitara и до 240 000 ₽ на SX4</div>
                 </div>
             </div>
             <div class="w-full sm:w-1/3 px-8 py-2 sm:py-24">
-                <div class="cursor-pointer bg-transparent flex flex-col justify-center items-center text-center">
-                    <div class="gift-icon m-8">
-                        <img class="w-full h-auto" src='images/3ef9bcc629c71efe2623c3e2d11e7bcf.png' />
+                <div class="cake">
+                    <div class="cake-icon">
+                        <img class="w-full h-auto" src='images/b169a9ccdbc02ea7dbbfe3d9124deeaa.svg' />
                     </div>
-                    <h1 class="text-2xl text-white font-bold pb-4">Каско</h1>
-                    <div class="text-xl text-white font-thin pb-4">Страховое покрытие по всей территории РФ</div>
+                    <h1 class="cake-title">Каско</h1>
+                    <div class="cake-article">Страховое покрытие по всей территории РФ</div>
                 </div>
             </div>
             <div class="w-full sm:w-1/3 px-8 py-2 sm:py-24">
-                <div class="cursor-pointer bg-transparent flex flex-col justify-center items-center text-center">
-                    <div class="gift-icon m-8">
-                        <img class="w-full h-auto" src='images/20b6e865f2420891429c715d447749db.png' />
+                <div class="cake">
+                    <div class="cake-icon">
+                        <img class="w-full h-auto" src='images/1490f24861f2a8961808f6b18553c34a.svg' />
                     </div>
-                    <h1 class="text-2xl text-white font-bold pb-4">Кредит</h1>
-                    <div class="text-xl text-white font-thin pb-4">Удобные варианты кредитования от 6%</div>
+                    <h1 class="cake-title">Кредит</h1>
+                    <div class="cake-article">Удобные варианты кредитования от 6%</div>
                 </div>
             </div>
         </div>
     </section>
     <section class="lg:relative">
         <div class="container">
-            <div class="lg:absolute flex flex-col justify-center items-start z-10 bg-white px-0 lg:px-12 md:px-24 pt-12 pb-24 lg:mt-24">
+            <div class="contacts-block lg:absolute lg:px-12 md:px-24 lg:mt-24 lg:shadow-lg">
                 <div class="map-block">
                     <h1 class="font-bold text-black text-4xl pb-12">Контакты</h1>
                     <div class="text-base font-thin pb-4">г. Санкт-Петербург, Мурманское шоссе, 12-й километр, 5</div>
@@ -742,27 +769,32 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab9c5c5e99130351fe84f89cf15727cc76eb08c663b229aa83d40c9bb1b5b7bf8&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div id="map-container" class="map-container"></div>
     </section>
     <footer class="w-full bg-black">
         <div class="container flex flex-wrap justify-center sm:justify-between py-6">
             <div class=" flex">
-                <div class="logo flex items-center">
-                    <img class="w-full h-auto" src='images/b0651a9198c1a0cd7718d80a8bc9290f.png' />
-                </div>
-                <div class="logo flex items-center">
-                    <img class="w-full h-auto" src='images/0a1b687c9b533b5cf65eeb5d24606589.png' />
-                </div>
+                <a href="">
+                    <div class="logo flex items-center">
+                        <img class="w-full h-auto" src='images/63e6ded794aa014f8faa092a8b903c12.png' />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="logo flex items-center">
+                        <img class="w-full h-auto" src='images/0a1b687c9b533b5cf65eeb5d24606589.png' />
+                    </div>
+                </a>
             </div>
             <div class=" flex justify-center sm:justify-end items-center">
                 <div class="flex flex-col text-center sm:text-right leading-none">
-                    <a href="tel:+7 812 210-94-05" class="uppercase font-bold text-2xl text-white">+7 812 210-94-05</a>
-                    <a href="#popup-form" class="popup-form text-base font-light text-white">Заказать звонок</a>
+                    <a href="tel:+7 812 210-94-05" class="hover:underline whitespace-no-wrap uppercase font-bold text-2xl text-white">+7 812 210-94-05</a>
+                    <a href="#popup-form" class="hover:underline popup-form text-base font-light text-white">Заказать звонок</a>
                 </div>
             </div>
         </div>
     </footer>
-<script type="text/javascript" src="main.js?f8586a950cdc620f7092"></script></body>
-<!-- <img class="w-full h-auto" src='images/0a1b687c9b533b5cf65eeb5d24606589.png' /> -->
+    <script type="text/javascript" src="//api-maps.yandex.ru/2.1/?lang=ru-RU"></script>
+    <!-- <img class="w-full h-auto" src='images/0a1b687c9b533b5cf65eeb5d24606589.png' /> -->
+<script type="text/javascript" src="main.js?782bc4e9f99baec6eb6b"></script></body>
 
 </html>
